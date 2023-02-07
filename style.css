@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.header {
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: inset 29px 47px 65px -32px #378fa5e6;
+    text-shadow: 1px 1px 1px #000000;
+    color: #293b3b;
+}
+
+.container {
+    max-width: 1000px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: auto;
+    overflow-x: auto;
+    resize: both;
+    background-image: url("background.jpg");
+    background-size: cover ;
+}
+
+.form__fieldset {
+    border-radius: 10px;
+    border: 5px solid #8ca4ab;
+    padding: 10px;
+    background-color: #c2dce2;
+}
+
+.form__select {
+    background-color: #4d5c5b;
+    border-radius: 5px;
+    color: whitesmoke;
+
+}
+
+.form__money {
+    background-color: #4d5c5b;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.form__data {
+    background-color: #4d5c5b;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.form__button {
+    width: 40%;
+    border: none;
+    background-color: #1e5f77;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form__button:hover {
+    background-color: #36545e;
+}
+
+.form__button:active {
+    background-color: #1d302f;
+}
+
+.form__lableText {
+    max-width: 150px;
+    width: 100%;
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form__result {
+    background-color: #4d5c5b;
+    border-radius: 5px;
+    color: whitesmoke;
+}
