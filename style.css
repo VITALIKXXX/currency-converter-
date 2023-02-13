@@ -11,7 +11,7 @@ html {
 .header {
     font-weight: bold;
     border-radius: 10px;
-    box-shadow: inset 29px 47px 65px -32px #378fa5e6;
+    box-shadow: inset 29px 47px 65px -32px #000837;
     text-shadow: 1px 1px 1px #000000;
     color: #293b3b;
 }
@@ -25,7 +25,7 @@ html {
     margin: auto;
     overflow-x: auto;
     resize: both;
-    background-image: url("images/background 2.jpg");
+    background-image: url("images/flaga\ uk.avif");
     background-size: cover ;
 }
 
@@ -33,7 +33,6 @@ html {
     border-radius: 10px;
     border: 5px solid #8ca4ab;
     padding: 10px;
-    background-color: #c2dce2;
 }
 
 .form__select {
