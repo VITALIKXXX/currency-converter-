@@ -15,27 +15,30 @@
         }
     };
 
+    
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+        const moneyElement = document.querySelector(".js-form__money");
+        const selectElement = document.querySelector(".js-form__select");
+        const resultElement = document.querySelector(".js-form__result");
+
+        const money = +moneyElement.value;
+        const select = selectElement.value;
+
+
+
+        const result = calculateResult(+moneyElement.value, selectElement.value)
+        resultElement.innerText = `${result.toFixed(2)}${select}`;
+
+
+    };
+
     const init = () => {
         const formElement = document.querySelector(".js-form");
 
-        formElement.addEventListener("submit", (event) => {
-            event.preventDefault();
-            const moneyElement = document.querySelector(".js-form__money");
-            const selectElement = document.querySelector(".js-form__select");
-            const resultElement = document.querySelector(".js-form__result");
+        formElement.addEventListener("submit", onFormSubmit);
 
-            const money = +moneyElement.value;
-            const select = selectElement.value;
-
-
-
-            const result = calculateResult(+moneyElement.value, selectElement.value)
-            resultElement.innerText = `${result.toFixed(2)}${select}`;
-
-
-        });
-
-    }
+    };
     init();
 
 }
