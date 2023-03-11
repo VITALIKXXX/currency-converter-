@@ -11,6 +11,7 @@
 2. CSS
 3. JavaScript
 
+![Animation](https://github.com/VITALIKXXX/currency-converter-/blob/main/images/Animation.gif?raw=true)
 ## Demo
 https://vitalikxxx.github.io/currency-converter-/
 
