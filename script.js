@@ -15,6 +15,7 @@
     };
 
     const updateResultText = (result, select) => {
+
         const resultElement = document.querySelector(".js-form__result");
 
         resultElement.innerText = `${result.toFixed(2)}${select}`;
