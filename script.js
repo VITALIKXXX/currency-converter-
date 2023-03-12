@@ -37,7 +37,7 @@
 
         const result = calculateResult(+moneyElement.value, currencyElement.value)
 
-        updateResultText(result, money, currency);
+        updateResultText(result, money,  currency,);
     };
 
     const init = () => {
