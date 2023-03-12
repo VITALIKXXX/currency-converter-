@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,13 +25,13 @@
             <fieldset class="form__fieldset">
                 <p>
                     <label>
-                        <span class="form__lableText"> Kwota </span> <input class="form__money js-form__money" required
+                        <span class="form__lableText"> Kwota </span> <input class="form__money js-money" required
                             type="number" min="0.01" step="any" placeholder="Polski zloty">
                     </label>
                 </p>
                 <p>
                     <label>
-                        <span class="form__lableText"> Na walute</span><select class="form__select js-form__select"
+                        <span class="form__lableText"> Na walute</span><select class="form__currency js-currency"
                             name="waluty">
                             <option name="EUR" value="EUR">EUR-Euro</option>
                             <option name="USD" value="USD">USD-Dolar amerykanski</option>
@@ -43,7 +44,7 @@
                     <button class="form__button" type="submit">Oblicz</button>
                 </p>
                 <p>
-                    <span class="form__lableText"> Wynik:</span><strong class="js-form__result" type="reset">0</strong>
+                    <span class="form__lableText"> Wynik:</span><strong class="js-result" type="reset">0</strong>
                 </p>
             </fieldset>
         </form>
