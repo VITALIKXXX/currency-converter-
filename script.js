@@ -1,11 +1,12 @@
 {
-    const calculateResult = (money, select) => {
+    const calculateResult = (money, currency) => {
 
         const EUR = 4.7037;
 
         const USD = 4.5971;
 
-        switch (select) {
+        switch (currency) {
+
             case "EUR":
                 return money / EUR;
 
@@ -14,31 +15,33 @@
         }
     };
 
-    const updateResultText = (result, select) => {
+    const updateResultText = (result, money, currency) => {
 
-        const resultElement = document.querySelector(".js-form__result");
+        const resultElement = document.querySelector(".js-result");
 
-        resultElement.innerText = `${result.toFixed(2)}${select}`;
+        resultElement.innerText = `${result.toFixed(2)}${currency}${money}`;
 
     }
 
     const onFormSubmit = (event) => {
+
         event.preventDefault();
 
-        const moneyElement = document.querySelector(".js-form__money");
+        const moneyElement = document.querySelector(".js-money");
 
-        const selectElement = document.querySelector(".js-form__select");
+        const currencyElement = document.querySelector(".js-currency");
 
         const money = +moneyElement.value;
 
-        const select = selectElement.value;
+        const currency = currencyElement.value;
 
-        const result = calculateResult(+moneyElement.value, selectElement.value)
+        const result = calculateResult(+moneyElement.value, currencyElement.value)
 
-        updateResultText(result, select);
+        updateResultText(result, money, currency);
     };
 
     const init = () => {
+
         const formElement = document.querySelector(".js-form");
 
         formElement.addEventListener("submit", onFormSubmit);
