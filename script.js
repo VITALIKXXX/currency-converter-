@@ -15,7 +15,7 @@
         }
     };
 
-    const updateResultText = (result, money, currency) => {
+    const updateResultText = (result, currency) => {
 
         const resultElement = document.querySelector(".js-result");
 
@@ -37,7 +37,7 @@
 
         const result = calculateResult(+moneyElement.value, currencyElement.value)
 
-        updateResultText(result, money,  currency,);
+        updateResultText(result, currency,);
     };
 
     const init = () => {
