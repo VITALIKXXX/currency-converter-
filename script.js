@@ -19,7 +19,7 @@
 
         const resultElement = document.querySelector(".js-result");
 
-        resultElement.innerText = `${result.toFixed(2)}${currency}${money}`;
+        resultElement.innerText = `${result.toFixed(2)}${currency}`;
 
     }
 
